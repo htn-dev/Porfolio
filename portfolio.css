@@ -1,0 +1,504 @@
+@font-face{
+    font-family: poiret;
+    src: url(./media/fonts/Poiret_One/PoiretOne-Regular.ttf);
+}
+
+@font-face{
+    font-family: dancingScript;
+    src: url(./media/fonts/Dancing_Script/DancingScript-Bold.ttf);
+}
+
+@font-face{
+    font-family: verde;
+    src: url(./media/fonts/verdemoderna.woff);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0px;
+    position: relative;
+    font-family: poiret;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 253, 253);
+}
+
+h2{
+    font-size: 250%;
+    font-family: dancingScript;
+    margin: 0px 0px 50px;
+}
+
+section{
+    padding: 0px 0px 75px 0px;
+}
+
+.sectionHeader{
+    padding: 60px 0px 0px 0px;
+}
+
+.summary{
+    font-size: 150%;
+    text-align: center;
+}
+
+.return{
+    padding: 40px;
+}
+
+.return > a{
+    color: orangered;
+    font-size: 120%;
+    font-weight: bolder;
+}
+
+.return.gold > a{
+    color: gold;
+}
+
+/*/////////////////////////     TOP SECTION     ////////////////////////////////////////////////*/
+
+main{
+    margin: 5px 0px 0px 0px;
+}
+
+video{
+    width: 100%;
+}
+
+#top{
+    position: relative;
+    width: 100%;
+    padding: 0px;
+}
+
+#overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 99.5%;
+    background-color: rgba(58, 56, 82, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+#name{
+    color: white;
+    font-family: dancingScript;
+    font-size: 300%;
+    margin: 20px;
+}
+
+#title{
+    margin: 0px;
+    padding: 0px;
+    font-family: poiret;
+    color: white;
+    font-size: 240%;
+}
+
+#icon{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#icon > a{
+    margin: 15px 0px;
+}
+
+#icon i.fab, #bottomIcons i.fab{
+    color: white;
+    font-size: 25px;
+    margin:  0px 10px;
+}
+
+/*//////////////////////////////     NAV BAR     ///////////////////////////////////////*/
+
+nav{
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.navBar:hover{
+    background-color: lightcoral;
+    color: white;
+}
+
+.navBar{
+    font-size: 165%;
+    text-decoration-line: none;
+    color: black;
+    background-color: rgb(255, 253, 253);
+    border-radius: 10%;
+    padding: 2% 9%;
+    margin: 10px 0px;
+}
+
+/*/////////////////////////     ABOUT ME     ////////////////////////////////////////////////*/
+#quote{
+    margin: 0px 30px;
+}
+
+#aboutMeHeader{
+    padding-top: 25px;
+}
+
+#aboutMe{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#aboutMe div{
+    padding: 25px 35px;
+    text-align: center;
+    flex-basis: 100%;
+}
+
+/*/////////////////////////   PORTFOLIO     ////////////////////////////////////////////////*/
+
+#portfolio, #contact{
+    background-color: rgba(58, 56, 82, 0.7);
+    color: white;
+}
+
+#thumbnails{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.nail{
+    flex-basis: 100%;
+    margin: 25px 55px;
+    border-radius: 5%;
+    background-color: whitesmoke;
+    height: 200px;
+    text-decoration: none;
+}
+
+.nail#project1{
+    background-image: url(./media/images/beauty-box.png);
+}
+
+.nail#project2{
+    background-image: url(./media/images/note-board.png)
+}
+
+.nail#project3{
+    background-image: url(./media/images/crypto.png)
+}
+
+.nail#project1, .nail#project2, .nail#project3{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.nail#project1:hover, .nail#project2:hover, .nail#project3:hover{
+    border-radius: 0%;
+    background-color: lightcoral;
+    background-image: none;
+    transition-duration: 400ms;
+    transition-property: background-color;
+}
+
+.project-text{
+    display: none;
+}
+
+.nail:hover .project-text{
+    display: block;
+    color: white;
+    font-size: 130%;
+    margin: 15px;
+}
+
+/*/////////////////////////   RESUME     ////////////////////////////////////////////////*/
+
+#tools > span{
+    padding: 0px 20px;
+}
+
+#tools i{
+    font-size: 50px;
+}
+
+.fa-node{
+    color: green;
+}
+
+.fa-react{
+    color: mediumblue;
+}
+
+.fa-html5{
+    color:orangered;
+}
+
+.fa-css3-alt{
+    color: steelblue;
+}
+
+#mongoDB{
+    width: 100px;
+    height: 50px;
+}
+
+#redux{
+    width: 50px;
+    height: 50px;
+}
+
+hr{
+    margin: 50px 0px 0px;
+}
+
+#resumeBody{
+    text-align: left;
+    margin: 10px 13%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.resumeHeader{
+    font-size: 200%;
+    margin: 55px;
+    text-align: center;
+}
+
+.classification-container{
+    margin: 20px 0px;
+}
+
+.classification-container p, .classification-container > span:nth-child(2), #resumeBody > p{
+    font-size: 110%;
+}
+
+.classification{
+    font-size: 125%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+ul{
+    margin: 20px 0px;
+}
+
+/*/////////////////////////   CONTACT     ////////////////////////////////////////////////*/
+
+#contact span{
+    padding: 0px 35px;
+}
+
+#bottomIcons{
+    padding: 25px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer > span{
+    flex-basis: 100%;
+    margin: 10px;    
+}
+
+@media only screen and (min-width: 650px) and (max-width: 799px){
+
+    h2{
+        font-size: 300%;
+        margin: 0px 0px 50px;
+    }
+
+    /*////////////////////// TOP /////////////////*/
+
+    #name{
+        font-size: 375%;
+        padding: 10% 0px 0px 0px;
+    }
+
+    /*////////////////////////// NAV /////////////////////*/
+
+    nav{
+        bottom: 50px;
+       }
+    
+    .navBar{
+        padding: 2% 5%;
+        font-size: 125%;
+    }
+
+    /*/////////////////////// PORTFOLIO ///////////////////////*/
+
+    .nail{
+        flex-basis: 52%;
+    }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1150px){
+
+    h2{
+        font-size: 370%;
+        margin: 0px 0px 50px;
+    }
+
+    /*////////////////////// TOP /////////////////*/
+
+    #name{
+        font-size: 550%;
+        padding: 10% 0px 0px 0px;
+    }
+
+    #title{
+        font-size: 300%;
+    }
+
+    /*////////////////////////// NAV /////////////////////*/
+
+    nav{
+        bottom: 50px;
+       }
+    
+    .navBar{
+        padding: 2% 8.3%;
+        font-size: 135%;
+    }
+
+    /*/////////////////////// PORTFOLIO ///////////////////////*/
+
+    .nail{
+        flex-basis: 35%;
+    }
+
+    /*/////////////////////// RESUME /////////////////////////////*/
+    
+    #tools i{
+        font-size: 75px;
+    }
+
+    #mongoDB{
+        width: 150px;
+        height: 75px;
+    }
+    
+    #redux{
+        width: 75px;
+        height: 75px;
+    }
+}
+
+@media only screen and (min-width: 1151px){
+    h2{
+        font-size: 450%;
+        margin: 0px 0px 50px;
+    }
+
+    /*////////////////// TOP SECTION //////////////////*/
+
+    main{
+        margin: -5px 0px 0px 0px;
+    }
+
+    #name{
+        font-size: 750%;
+        margin: -75px 0px 20px 0px;
+    }
+
+    #title{
+        margin: 0px;
+        padding: 0px;
+        font-size: 350%;
+    }
+
+    #icon > a{
+    margin: 50% 20% 250%;
+    }
+
+    #icon i.fab, #bottomIcons i.fab{
+    font-size: 35px;
+    }
+
+    /*/////////////////// NAV ///////////////////////////*/
+
+    nav{
+     bottom: 70px;
+    }
+
+    .navBar{
+    margin: 0px;
+    }
+
+    /*///////////////// ABOUT ///////////////////////////////*/
+
+    #quote{
+        margin: 0px 0px 30px 0px;
+    }
+
+    #aboutMeHeader{
+    margin-top: 0px;
+    }
+
+    #aboutMe div{
+        padding: 25px 100px;
+        flex-basis: 31%;
+    }
+
+    /*///////////////////// PORTFOLIO ////////////////////////*/
+    
+    .nail{
+        flex-basis: 25%;
+        margin: 20px;
+    }
+
+    /*////////////////////// RESUME /////////////////////////////*/
+
+    #tools i{
+        font-size: 100px;
+    }
+
+    #mongoDB{
+        width: 180px;
+        height: 90px;
+    }
+
+    #redux{
+        width: 90px;
+        height: 90px;
+    }
+
+    #resumeBody{
+     margin: 10px 20%;
+    }
+
+    .resumeHeader{
+        font-size: 250%;
+    }
+
+    .classification-container{
+        margin: 20px;
+    }
+
+    ul{
+        margin: 50px;
+    }
+
+    /*///////////////////////////// CONTACT //////////////////////////////////*/
+
+    footer{
+        display: block;
+    }
+}
