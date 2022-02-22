@@ -9,7 +9,6 @@ function subdomainRedirect(){
             window.location.assign("beautybox.donnab.info");
         }
     })
-
     project2.addEventListener('click', ()=>{
         if(document.url === "http://donnab.info/noteboard.donnab.info" || document.url === "donnab.info/noteboard.donnab.info"){
             window.location.assign("noteboard.donnab.info");
