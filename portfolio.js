@@ -4,7 +4,6 @@ function subdomainRedirect(){
     const project2 = document.getElementById('project2')
     const project3 = document.getElementById('project3')
 
-
     project1.addEventListener('click', ()=>{
         if(document.url === "http://donnab.info/beautybox.donnab.info" || document.url === "donnab.info/beautybox.donnab.info"){
             window.location.assign("beautybox.donnab.info");
