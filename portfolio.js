@@ -22,4 +22,5 @@ function subdomainRedirect(){
         }
     })
 }
+
 subdomainRedirect()
